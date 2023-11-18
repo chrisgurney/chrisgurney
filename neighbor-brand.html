@@ -358,16 +358,16 @@
   <section class="py-md-5 py-4">
     <div class="container-fluid py-5">
       <div class="row">
-        <div class="col-md-10 col-12 mx-auto"> 
-          <div class="text-center">             
-            <img class="img-fluid d-sm-block d-none pb-5" src="images/portfolio-neighbor/svg/brand-logo-final.svg" alt="Final versions of the logo." />
-            <img class="img-fluid d-sm-none d-block pb-5" src="images/portfolio-neighbor/svg/brand-logo-final-mobile.svg" alt="Final versions of the logo." />
-            <p class="figure-caption">
-              The final logo.
-            </p>                       
-          </div>
+        <div class="col-10 mx-auto text-center">
+          <picture>
+            <source  class="img-fluid" media="(min-width:576px)" srcset="images/portfolio-neighbor/svg/brand-logo-final.svg" alt="Final versions of the logo." />
+            <img class="img-fluid" media="(max-width:575px)" srcset="images/portfolio-neighbor/svg/brand-logo-final-mobile.svg" alt="Final versions of the logo." />
+          </picture>
+          <p class="figure-caption">
+            The final logo.
+          </p>
         </div>
-      </div>      
+      </div>
     </div>
   </section>
 
