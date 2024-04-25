@@ -485,7 +485,7 @@ header p.category {
 }
 
 /**
- * Neighbor-specific styles
+ * Case-specific styles
  */
 
 header.neighbor {
@@ -508,6 +508,19 @@ section.neighbor-footer {
 			rgba(255, 133, 82, 1),
 			rgba(18, 128, 119, 0.7));
 	padding: 0;
+}
+
+@media (max-width: 1199px) {
+	header.koru {
+		background-image: url('/images/portfolio-koru/header-sm.jpg');
+		background-position: bottom center;
+	}
+}
+@media (min-width: 1200px) {
+	header.koru {
+		background-image: url('/images/portfolio-koru/header.jpg');
+		background-position: bottom right;
+	}
 }
 
 /**
