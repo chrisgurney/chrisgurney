@@ -1208,3 +1208,14 @@ video {
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
 	opacity: 0;
 }
+
+/**
+ * Privy
+ */
+
+.dropbox-image-placeholder {
+	background: no-repeat url('../images/image-loading-placeholder.svg');
+	background-position: center;
+	min-height: 240px;
+	min-width: 240px;
+}
