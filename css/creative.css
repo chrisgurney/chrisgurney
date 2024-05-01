@@ -394,7 +394,7 @@ header.about p > strong {
 		background-attachment: fixed;
 		background-position: 0rem 4rem;
 		background-repeat: no-repeat;
-		height: 80vh;
+		height: 100vh;
 		min-height: 650px;
 		padding-bottom: 0;
 		padding-top: 8rem;
@@ -436,7 +436,7 @@ header.portfolio {
 	header.portfolio {
 		background-attachment: fixed;
 		padding-top: 0rem;	
-		height: 80vh;
+		height: 100vh;
 		min-height: 650px;
 		padding-bottom: 0;
 	}
