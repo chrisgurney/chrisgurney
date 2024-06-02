@@ -892,7 +892,7 @@ blockquote {
 	letter-spacing: 0.1rem;  
 }
 
-.article-post p.popup-gallery.thumbs {
+.article-post .popup-gallery.thumbs {
 	display: table;
 	border-spacing: 0.5em;	
 }
@@ -917,6 +917,17 @@ blockquote {
 	margin: 0;
 	max-width: 100%;
 	max-height: 100%;
+}
+
+.more-image a {
+	border-radius: 10px;
+}
+
+.more-image img {
+	border: solid 2px #FF8800;
+	border-radius: 11px;
+	padding: 0em;
+	margin: 0;
 }
 
 .figure-caption {
@@ -1027,11 +1038,11 @@ blockquote {
 	color: #FFF;
 }
 
-.index .tags ul {
+.tags ul {
 	padding-inline-start: 0px;
 }
 
-.index .tags li {
+.tags li {
 	background: #ddd;
 	display: inline-block;
 	font-family: Montserrat,'Helvetica Neue',Arial,sans-serif;
