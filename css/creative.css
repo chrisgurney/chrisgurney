@@ -929,6 +929,10 @@ blockquote {
 	margin: 0;
 }
 
+.other-design .carousel-item img {
+	max-width: 35%;
+}
+
 .figure-caption {
 	padding-top: 0.5rem;
 	font-family: Montserrat,'Helvetica Neue',Arial,sans-serif;
