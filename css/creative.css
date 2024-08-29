@@ -174,6 +174,7 @@ img::-moz-selection {
 #mainNav {
 	background: rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 	font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
@@ -238,6 +239,7 @@ img::-moz-selection {
 	#mainNav.navbar-shrink {
 		background: rgba(255, 255, 255, 0.2);
 		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
 	}
 	#mainNav.navbar-shrink .navbar-brand {
 		color: #FF8800;
