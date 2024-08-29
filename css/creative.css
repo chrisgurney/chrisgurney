@@ -282,6 +282,10 @@ img::-moz-selection {
  * Menu > Full-Screen
  */
 
+.navbar:has(#navbarFull.show) {
+	background: rgba(255, 255, 255, 0.8);
+}
+
 .menu-nav {
   list-style: none;
   padding: 0;
