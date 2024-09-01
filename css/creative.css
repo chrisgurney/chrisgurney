@@ -1125,6 +1125,7 @@ blockquote {
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 	border: 0;
 	font-size: 0.9rem; 	
+	border-radius: 1rem;
 }
 
 .card h6 {
@@ -1137,8 +1138,15 @@ blockquote {
 	line-height: 1.8;
 }
 
+.card-img-top {
+	border-top-left-radius: calc(1rem - 1px);
+	border-top-right-radius: calc(1rem - 1px);
+}
+
 .card-img-bottom {
 	box-shadow: 0 -4px 24px 0 rgba(0, 0, 0, 0.1);	
+	border-bottom-left-radius: calc(1rem - 1px);
+	border-bottom-right-radius: calc(1rem - 1px);
 }
 
 .card .text-muted {
