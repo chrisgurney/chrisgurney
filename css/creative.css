@@ -737,6 +737,7 @@ div.banner-image {
 	margin: 0 auto;
 }
 
+.portfolio-box-hover .portfolio-box-caption,
 .portfolio-box .portfolio-box-caption {
 	position: absolute;
 	bottom: 0;
@@ -754,6 +755,7 @@ div.banner-image {
 	transition: all 0.2s;
 }
 
+.portfolio-box-hover .portfolio-box-caption .portfolio-box-caption-content, 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
 	position: absolute;
 	top: 50%;
@@ -762,7 +764,7 @@ div.banner-image {
 	text-align: center;
 }
 
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box-hover .portfolio-box-caption .portfolio-box-caption-content .project-name,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
 	padding: 0 15px;
 	font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
@@ -774,10 +776,12 @@ div.banner-image {
 	text-transform: uppercase;
 }
 
+.portfolio-box-hover .portfolio-box-caption .portfolio-box-caption-content .project-name,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
 	font-size: 18px;
 }
 
+.portfolio-box-hover .portfolio-box-caption,
 .portfolio-box:hover .portfolio-box-caption {
 	opacity: 1;
 }
