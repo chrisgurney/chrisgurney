@@ -6,8 +6,7 @@ html {
 
 body {
 	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-
-	--portfolio-border-radius: 1em;
+	--portfolio-border-radius: 0.5em;
 }
 
 hr {
@@ -961,7 +960,7 @@ blockquote {
 .article-post .popup-gallery.thumbs a {
 	border-bottom: none;
 	display: table-cell;
-	border-radius: 10px;
+	border-radius: var(--portfolio-border-radius);
 	box-shadow: 0 .5rem .5rem 0 rgba(0,0,0,.15);
 }
 
@@ -1083,9 +1082,9 @@ blockquote {
 	list-style: none;
 }
 
-.index h1 { 
+.index h1:not(:first-child) { 
 	clear: both;
-	padding-top: 3em;
+	padding-top: 2em;
 }
 
 @media (max-width: 768px) {
@@ -1150,9 +1149,14 @@ blockquote {
 	flex-direction: column;
 }
 
+.shot-img img {
+	width: 100%;
+	border-radius: var(--portfolio-border-radius);
+}
+
 .card h6 {
 	margin-top: 1rem;
-	margin-bottom: 1rem;	
+	margin-bottom: var(--portfolio-border-radius);	
 }
 
 .shot-body p, .shot-body a,
