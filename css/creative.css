@@ -1160,6 +1160,12 @@ blockquote {
 	border-radius: 1rem;
 }
 
+@media (min-width:1200px) {
+	.shots.container {
+		max-width: 1200px;
+	}
+}
+
 .shot {
 	display: flex;
 	flex-direction: column;
