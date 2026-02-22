@@ -1390,6 +1390,26 @@ video {
 }
 
 /**
+ * Magnific Popup Size
+ */
+ @media (min-width: 992px) {
+	.mfp-container {
+		inset: 40px !important;
+		width: auto !important;
+		height: auto !important;
+	}
+
+	.mfp-img {
+		max-width: calc(100vw - 80px) !important;
+		max-height: calc(100vh - 80px) !important;
+	}
+
+	.mfp-figure {
+		max-width: calc(100vw - 80px);
+	}
+}
+
+/**
  * Magnific Popup Fade Transition
  */
 .mfp-fade.mfp-bg {
