@@ -9,6 +9,7 @@ body {
 	--portfolio-border-radius: 0.5em;
 	--box-shadow-1: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 	--box-shadow-2: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+	--gradient-primary: linear-gradient(to right, rgba(254, 155, 39, 0.9), rgba(237, 99, 0, 0.9));
 }
 
 hr {
@@ -876,7 +877,7 @@ a.portfolio-box img.img-fluid {
 }
 
 .btn-primary {
-	background-color: #FF8800;
+	background: var(--gradient-primary);
 	border-color: #FF8800;
 	box-shadow: var(--box-shadow-2);
 }
@@ -1247,7 +1248,6 @@ img.mfp-img {
 .view-toggle {
 	display: inline-flex;
 	background: #ddd;
-	border: 1px solid #FF8800;
 	border-radius: 999px;
 	padding: 3px;
 	gap: 2px;
@@ -1260,8 +1260,7 @@ img.mfp-img {
 	top: 3px;
 	left: 3px;
 	height: calc(100% - 6px);
-	background: #FF8800;
-	border: 1px solid #FF8800;
+	background: var(--gradient-primary);
 	border-radius: 999px;
 	box-shadow: 0 1px 4px rgba(0,0,0,0.3);
 	transition: transform 0.1s ease, width 0.2s ease;
