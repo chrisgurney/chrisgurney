@@ -1260,6 +1260,7 @@ img.mfp-img {
 	border: 1px solid #FF8800;
 	border-radius: 999px;
 	box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+	transition: transform 0.1s ease, width 0.2s ease;
 }
 
 .toggle-btn {
