@@ -467,6 +467,7 @@ header.masthead {
 header.masthead h1 {
 	color: #FF8800;
 	font-size: 2rem;
+	line-height: 0.9;
 }
 
 @media (min-width: 992px) {
