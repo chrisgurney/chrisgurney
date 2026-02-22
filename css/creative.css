@@ -987,6 +987,10 @@ blockquote {
 	letter-spacing: 0.1rem;  
 }
 
+.article-post .popup-gallery {
+	margin-bottom: 0;
+}
+
 .article-post .popup-gallery.thumbs {
 	display: table;
 	border-spacing: 0.5em;	
