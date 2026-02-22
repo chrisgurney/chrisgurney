@@ -56,7 +56,7 @@
     <link href="/vendor/magnific-popup/magnific-popup.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/css/creative.css?v=11c5fdef87f2d7d9426741c578d4316d" rel="stylesheet">
+    <link href="/css/creative.css?v=d5d204c135c458f8f9f7e40f64e5f593" rel="stylesheet">
 
     <!-- Drift Async Code -->
     <script>
@@ -180,10 +180,21 @@
 
 
 <header id="work" class="text-center d-flex" style="background-color: rgb(245 245 245 / 90%)">
-  <div class="container my-auto sr-card">
+  <div class="container my-auto">
     <div class="row mt-4">
       <div class="col-lg-8 mx-auto my-5">    
         <span class="h1-xl text-gradient">My Work</span>
+        <!-- Toggle START -->
+        <div class="view-toggle" id="toggle">
+          <div class="toggle-slider" id="slider"></div>
+          <button class="toggle-btn active" data-view="list" data-on="work-detail" data-off="work-shots" title="Detail view">
+            <i class="fa fa-list-ul"></i>
+          </button>
+          <button class="toggle-btn" data-view="grid" data-on="work-shots" data-off="work-detail" title="Shot view">
+            <i class="fa fa-th"></i>
+          </button>
+        </div>
+        <!-- Toggle END -->
       </div>
     </div>
   </div>
@@ -194,19 +205,21 @@
   
   
 <section class="py-0">
-    <div class="banner-image banner-fixed text-center d-flex" style="background: linear-gradient(to right, rgba(254, 155, 39, 0.9), rgba(237, 99, 0, 0.9)); min-height: 4px; box-shadow: 0 -10px 10px -5px rgba(0,0,0,0.5);">  
-        &nbsp;
-    </div>
+    
+        <div class="banner-image banner-fixed text-center d-flex" style="background: linear-gradient(to right, rgba(254, 155, 39, 0.9), rgba(237, 99, 0, 0.9)); min-height: 4px; box-shadow: 0 -10px 10px -5px rgba(0,0,0,0.5);">  
+            &nbsp;
+        </div>
+    
 </section>
 
 
-  <!-- Begin Post -->
-  <section class="index pb-5 pt-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-12 mx-auto">
-          <div class="article-post pt-0">
-            <h1>Note Toolbar Plugin</h1>
+  <div id="work-detail">
+    <section class="index pb-5 pt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-12 mx-auto">
+            <div class="article-post pt-0">
+              <h1>Note Toolbar Plugin</h1>
 <p class="popup-gallery"><a href="/images/shots/note-toolbar-styles.jpg"><img alt="Note Toolbar" src="/images/shots/note-toolbar-styles.jpg" /></a></p>
 <div class="tags">
 <ul>
@@ -225,7 +238,7 @@ TypeScript, CSS</p>
 <p class="popup-gallery thumbs"><a href="/images/shots/note-toolbar-settings.jpg" title="Used the Obsidian Settings API but required a number of custom components in order to provide an optimal experience."><img alt="&quot;Used the Obsidian Settings API but required a number of custom components in order to provide an optimal experience." src="/images/shots/note-toolbar-settings.jpg" /></a>
 <a href="/images/shots/note-toolbar-docs.jpg" title="Comprehensive docs I wrote for the plugin, including installation, settings guides, use cases, and support material."><img alt="&quot;Comprehensive docs I wrote for the plugin, including installation, settings guides, use cases, and support material." src="/images/shots/note-toolbar-docs.jpg" /></a>
 <a href="/images/shots/note-toolbar-kudos.jpg" title="The kind words of my users, among plenty of feedback that has been continually incorporated into the seemingly simple plugin."><img alt="&quot;The kind words of my users, among plenty of feedback that has been continually incorporated into the seemingly simple plugin." src="/images/shots/note-toolbar-kudos.jpg" /></a></p>
-            <h1>Koru Storefront</h1>
+              <h1>Koru Storefront</h1>
 <p><img alt="Koru storefront screenshots, showing desktop and mobile versions" src="/images/portfolio/thumbnails/koru-storefront.jpg" /></p>
 <div class="tags">
 <ul>
@@ -250,7 +263,7 @@ TypeScript, CSS</p>
 <p class="popup-gallery thumbs"><a href="/images/portfolio-koru/koru-card-home.jpg" title="Screenshot of the Koru storefront home page"><img alt="&quot;Screenshot of the Koru storefront home page" src="/images/portfolio-koru/koru-card-home.jpg" /></a>
 <a href="/images/portfolio-koru/koru-card-pdp.jpg" title="Screenshot of a product detail page the Koru storefront"><img alt="&quot;Screenshot of a product detail page the Koru storefront" src="/images/portfolio-koru/koru-card-pdp.jpg" /></a>
 <a href="/images/portfolio-koru/koru-card-plp.jpg" title="Screenshot of a product listing page the Koru storefront"><img alt="&quot;Screenshot of a product listing page the Koru storefront" src="/images/portfolio-koru/koru-card-plp.jpg" /></a></p>
-            <h1>FundThrough Embedded</h1>
+              <h1>FundThrough Embedded</h1>
 <p><img alt="FundThrough logo" src="/images/about/pm-fundthrough.jpg" /></p>
 <div class="tags">
 <ul>
@@ -271,7 +284,7 @@ TypeScript, CSS</p>
 <li>Led <strong>developer documentation</strong> effort and implementation of developer portal.</li>
 <li>As product lead, simultaneously <strong>managed a team of two product managers</strong>, who owned other functional areas.</li>
 </ul>
-            <h1>FundThrough UI + Branding</h1>
+              <h1>FundThrough UI + Branding</h1>
 <p><img alt="FundThrough website screenshot" src="/images/portfolio/thumbnails/fundthrough-rebrand.jpg" /></p>
 <div class="tags">
 <ul>
@@ -298,7 +311,10 @@ TypeScript, CSS</p>
 <p class="popup-gallery thumbs"><a href="/images/portfolio-fundthrough/home-page.jpg" title="Mockup of the FundThrough home page"><img alt="&quot;Mockup of the FundThrough home page" src="/images/portfolio-fundthrough/home-page.jpg" /></a>
 <a href="/images/portfolio-fundthrough/home-components.jpg" title="Mockup of the FundThrough home page"><img alt="&quot;Components from the FundThrough home page" src="/images/portfolio-fundthrough/home-components.jpg" /></a>
 <a href="/images/portfolio-fundthrough/home-variation.jpg" title="Mockup of the FundThrough home page"><img alt="&quot;Mockup of the FundThrough home page" src="/images/portfolio-fundthrough/home-variation.jpg" /></a></p>
-            <h1>Neighbor UX/UI</h1>
+<p class="popup-gallery thumbs"><a href="/images/shots/fundthrough-mobile.jpg" title="Mockup of the FundThrough mobile dashboard"><img alt="&quot;Mockup of FundThrough mobile dashboard" src="/images/portfolio-fundthrough/fundthrough-mobile-thumb.jpg" /></a>
+<a href="/images/shots/fundthrough-design-system.jpg" title="FundThrough design system built in Storybook"><img alt="&quot;FundThrough design system built in Storybook" src="/images/portfolio-fundthrough/fundthrough-design-system-thumb.jpg" /></a>
+<a href="/images/shots/fundthrough-screen.jpg" title="Mockup of FundThrough funding experience"><img alt="&quot;Mockup of FundThrough funding experience" src="/images/portfolio-fundthrough/fundthrough-screen-thumb.jpg" /></a></p>
+              <h1>Neighbor UX/UI</h1>
 <p><img alt="Neighbor screenshot" src="/images/portfolio-neighbor/neighbor-desk-portfolio.jpg" /></p>
 <div class="tags">
 <ul>
@@ -323,7 +339,7 @@ TypeScript, CSS</p>
 <p class="popup-gallery thumbs"><a href="/images/portfolio-neighbor/neighbor-hub-navigation.jpg" title="Neighbor Hub for CSRs"><img alt="Neighbor Hub UI" src="/images/portfolio-neighbor/neighbor-hub-navigation.jpg" /></a>
 <a href="/images/portfolio-neighbor/neighbor-bills.jpg" title="Mockups of printed bills for Neighbor"><img alt="Mockups of printed bills for Neighbor" src="/images/portfolio-neighbor/neighbor-bills.jpg" /></a>
 <a href="/images/portfolio-neighbor/neighbor-email.jpg" title="Responsive transactional emails I implemented with focus on simplicity for first release"><img alt="Neighbor email screenshot on mobile phone" src="/images/portfolio-neighbor/neighbor-email.jpg" /></a></p>
-            <h1>Neighbor Brand</h1>
+              <h1>Neighbor Brand</h1>
 <p><img alt="Neighbor Billing logo and brand colors as stripes." src="/images/portfolio-neighbor/neighbor-brand.jpg" /></p>
 <div class="tags">
 <ul>
@@ -344,7 +360,7 @@ TypeScript, CSS</p>
 <p class="popup-gallery thumbs"><a href="/images/portfolio-neighbor/goneighbor-front-portfolio.jpg" title="The goneighbor.co responsive marketing site I designed and implemented."><img alt="Neighbor web page" src="/images/portfolio-neighbor/goneighbor-front-portfolio.jpg" /></a>
 <a href="/images/portfolio-neighbor/neighbor-logo-portfolio.jpg" title="Neighbor logo after the re-brand. See the full case study for more details."><img alt="Neighbor logo" src="/images/portfolio-neighbor/neighbor-logo-portfolio.jpg" /></a>
 <a href="/images/portfolio-neighbor/neighbor-sales-deck.jpg" title="Sales deck I implemented based on interviewing stakeholders."><img alt="Neighbor sales deck" src="/images/portfolio-neighbor/neighbor-sales-deck.jpg" /></a></p>
-            <h1>Fuzzies Gratitude Journal Concept</h1>
+              <h1>Fuzzies Gratitude Journal Concept</h1>
 <p><img alt="Fuzzies logo and app screenshot." src="/images/portfolio-fuzzies/fuzzies-portfolio.jpg" /></p>
 <div class="tags">
 <ul>
@@ -365,7 +381,7 @@ TypeScript, CSS</p>
 <p class="popup-gallery thumbs"><a href="/images/portfolio-fuzzies/fuzzies-feed-evolution.jpg" title="Evolution of the Fuzzies feed from wireframe to final."><img alt="Evolution of the Fuzzies feed from wireframe to final." src="/images/portfolio-fuzzies/fuzzies-feed-evolution.jpg" /></a>
 <a href="/images/portfolio-fuzzies/fuzzies-icon-variations.jpg" title="Variations of the Fuzzies icon, before selecting a final."><img alt="Variations of the Fuzzies icon, before selecting a final." src="/images/portfolio-fuzzies/fuzzies-icon-variations.jpg" /></a>
 <a href="/images/portfolio-fuzzies/fuzzies-screens-portfolio.jpg" title="From left to right - Splash, news, and variable reward."><img alt="Three screens from Fuzzies." src="/images/portfolio-fuzzies/fuzzies-screens-portfolio-sm.jpg" /></a></p>
-            <h1>Concussion Recovery App</h1>
+              <h1>Concussion Recovery App</h1>
 <p><img alt="CCMI logo" src="/images/about/pm-ccmi.jpg" /></p>
 <div class="tags">
 <ul>
@@ -392,7 +408,7 @@ TypeScript, CSS</p>
 <li>Test Scenarios: <strong>Developed and executed test plan</strong> (no QA resource).</li>
 </ul>
 <p><a href="https://completeconcussions.com/" target="_blank">Visit <strong>CompleteConcussions.com</strong> ↗</a></p>    
-            <h1>At-Home Physiotherapy App</h1>
+              <h1>At-Home Physiotherapy App</h1>
 <p><img alt="Therapia logo" src="/images/about/pm-therapia.jpg" /></p>
 <div class="tags">
 <ul>
@@ -411,7 +427,7 @@ TypeScript, CSS</p>
 </blockquote>
 <p>Therapia provides patients with physiotherapy home visits. The app connects patients with local home care physiotherapists throughout the GTA and beyond. I managed requirements and continuous client delivery, from <strong>concept to launch</strong>.</p>
 <p><a href="https://therapia.com" target="_blank">Visit <strong>Therapia.com</strong> ↗</a></p>
-            <h1>Recruitment Platform MVP</h1>
+              <h1>Recruitment Platform MVP</h1>
 <p><img alt="wayHire logo" src="/images/about/pm-wayhire.jpg" /></p>
 <div class="tags">
 <ul>
@@ -439,7 +455,7 @@ TypeScript, CSS</p>
 <li>Conducted discovery and managed roadmap.</li>
 </ul>
 </div>
-            <h1>Paymi</h1>
+              <h1>Paymi</h1>
 <p><img alt="Paymi logo" src="/images/about/pm-paymi.jpg" /></p>
 <div class="tags">
 <ul>
@@ -458,7 +474,7 @@ TypeScript, CSS</p>
 </blockquote>
 <p>Paymi is a consumer loyalty / card-linked offers app that allows consumers to automatically earn cash when they shop with their existing credit or debit cards. I managed requirements and continuous delivery.</p>
 <p><a href="https://www.paymi.com/" target="_blank">Visit <strong>Paymi.com</strong> ↗</a></p>
-            <h1>Sports Fundraising &amp; CMS Platform</h1>
+              <h1>Sports Fundraising &amp; CMS Platform</h1>
 <p><img alt="Boon-Town logo" src="/images/about/pm-boontown.jpg" /></p>
 <div class="tags">
 <ul>
@@ -477,7 +493,7 @@ TypeScript, CSS</p>
 </blockquote>
 <p>Boon-Town partnered with athletes and teams to raise funds and awareness for important causes. I managed requirements and continuous client delivery, from <strong>concept to launch</strong>.</p>
 <p>The platform was used successfully for a <a href="https://www.newswire.ca/news-releases/hockey-hall-of-fame-member-doug-gilmour-raising-funds-for-the-gord-downie-fund-for-brain-cancer-research-at-sunnybrook-602627165.html" target="_blank">very Canadian campaign ↗</a> to raise funds for the Gord Downie Fund for Brain Cancer Research at Sunnybrook.</p>
-            <h1>Achievers API Prototypes</h1>
+              <h1>Achievers API Prototypes</h1>
 <p><img alt="Achievers Product Labs page" src="/images/portfolio/achievers-product-labs-brand.jpg" /></p>
 <div class="tags">
 <ul>
@@ -504,7 +520,7 @@ TypeScript, CSS</p>
 <p class="popup-gallery thumbs"><a href="/images/portfolio/achievers-product-labs.jpg" title="Internal web page used to share the prototypes available."><img alt="Achievers Product Labs page showing collection of prototypes" src="/images/portfolio/achievers-product-labs-sm.jpg" /></a>
 <a href="/images/portfolio/achievers-api-profile-collage.jpg" title="Portfolio collage prototype implemented in jQuery, using employee data from the Achievers system."><img alt="Achievers Profile Collage prototype" src="/images/portfolio/achievers-api-profile-collage.jpg" /></a>
 <a href="/images/portfolio/achievers-api-reco-screen.jpg" title="Recognition screen prototype implemented in jQuery, using recognition data from the Achievers system."><img alt="Achievers Recognition Screen prototype" src="/images/portfolio/achievers-api-reco-screen.jpg" /></a></p>
-            <h1>Achievers Accessibility</h1>
+              <h1>Achievers Accessibility</h1>
 <p><img alt="Achievers logo" src="/images/about/pm-achievers.jpg" /></p>
 <div class="tags">
 <ul>
@@ -526,7 +542,7 @@ TypeScript, CSS</p>
 <li>Found <a href="https://www.youtube.com/watch?v=xSkS9uI7Wqw" target="_blank">a developer advocate ↗</a> who was interested in being the expert, and involved them in user testing, to build empathy.</li>
 <li>Conducted acceptance testing with JAWS, WAVE, and aChecker.</li>
 </ul>
-            <h1>Achievers Product Management Initiatives</h1>
+              <h1>Achievers Product Management Initiatives</h1>
 <p><img alt="Achievers logo" src="/images/about/pm-achievers.jpg" /></p>
 <div class="tags">
 <ul>
@@ -575,7 +591,7 @@ TypeScript, CSS</p>
 <li>HRIS Integration Improvements - Executed requirements from our Professional Services team to improve the efficiency, integrity, and functionality behind data imports from HR systems.</li>
 </ul>
 </div>
-            <h1>Achievers Program Launches</h1>
+              <h1>Achievers Program Launches</h1>
 <div class="tags">
 <ul>
 <li>Professional Services</li>
@@ -591,11 +607,411 @@ TypeScript, CSS</p>
 <p>Led the design and implementation of <strong>30+ customized employee recognition programs</strong>, with annual contract values ranging from <strong>$120K to $3.5M</strong>.</p>
 <p>Notable clients included <strong>Google</strong>, <strong>Levi’s</strong>, and <strong>Cineplex</strong>.</p>
 <p>Worked with HR directors and senior stakeholders to determine requirements for recognition programs, including: program brand, design elements (in conjunction with graphic designer), components, budgets, and communication plan.</p>
+            </div>
           </div>
         </div>
       </div>
+    </section>  
+  </div>
+
+  <div id="work-shots" style="display: none">
+    <section class="pb-5 pt-md-5 pt-5">
+      <div class="shots container">
+        <div class="row pt-3 popup-gallery">
+          
+          
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/note-toolbar-styles.jpg" title="Note Toolbar • Plugin for Obsidian.">
+        <img src="/images/shots/note-toolbar-styles.jpg" title="Note Toolbar"/>
+      </a>
     </div>
-  </section>  
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/note-toolbar-settings.jpg" title="Note Toolbar plugin settings • Note Toolbar plugin settings.">
+        <img src="/images/shots/note-toolbar-settings.jpg" title="Note Toolbar plugin settings"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/note-toolbar-docs.jpg" title="Note Toolbar user guide • ">
+        <img src="/images/shots/note-toolbar-docs.jpg" title="Note Toolbar user guide"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/koru-card-home.jpg" title="Koru Storefront • Koru Marketplace design.">
+        <img src="/images/shots/koru-card-home.jpg" title="Koru Storefront"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/koru-card-plp.jpg" title="Koru Storefront Product Listing Page • Koru Marketplace design.">
+        <img src="/images/shots/koru-card-plp.jpg" title="Koru Storefront Product Listing Page"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/fundthrough-mobile.jpg" title="FundThrough App Redesign • FundThrough mobile mockup.">
+        <img src="/images/shots/fundthrough-mobile.jpg" title="FundThrough App Redesign"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/fundthrough-design-system.jpg" title="FundThrough Design System • Initiated FundThrough's design system using Storybook.">
+        <img src="/images/shots/fundthrough-design-system.jpg" title="FundThrough Design System"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/fundthrough-screen.jpg" title="FundThrough UI • FundThrough's web user experience.">
+        <img src="/images/shots/fundthrough-screen.jpg" title="FundThrough UI"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/fundthrough-home-page.jpg" title="FundThrough Home Page Redesign • FundThrough rebranding.">
+        <img src="/images/shots/fundthrough-home-page.jpg" title="FundThrough Home Page Redesign"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/fundthrough-home-components.jpg" title="FundThrough Home Page Redesign • FundThrough rebranding.">
+        <img src="/images/shots/fundthrough-home-components.jpg" title="FundThrough Home Page Redesign"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/neighbor-brand.jpg" title="Neighbor Billing Brand • Brand refresh I did for Neighbor Billing.">
+        <img src="/images/shots/neighbor-brand.jpg" title="Neighbor Billing Brand"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/neighbor-desk-portfolio.jpg" title="Services Billing Administration Web Interface • Web interface for managing service billing, to be used by customer service team members at telecom and utility companies.">
+        <img src="/images/shots/neighbor-desk-portfolio.jpg" title="Services Billing Administration Web Interface"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/neighbor-hub-navigation.jpg" title="Services Billing Administration Web Interface • Web interface for managing service billing, to be used by customer service team members at telecom and utility companies.">
+        <img src="/images/shots/neighbor-hub-navigation.jpg" title="Services Billing Administration Web Interface"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/neighbor-bills.jpg" title="Printed Bills • Mockups of printed services/utility bills generated by Neighbor Billing, which evolved with user testing, and as the finals were implemented (in HTML/Handlebars, then converted to PDF on-the-fly).">
+        <img src="/images/shots/neighbor-bills.jpg" title="Printed Bills"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/neighbor-email.jpg" title="Responsive Transactional Email • Neighbor Billing's responsive transactional emails I implemented, with a focus on simplicity for the first release.">
+        <img src="/images/shots/neighbor-email.jpg" title="Responsive Transactional Email"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/neighbor-sales-deck.jpg" title="Sales Deck • Neighbor Billing's sales deck I implemented, based on interviewing stakeholders.">
+        <img src="/images/shots/neighbor-sales-deck.jpg" title="Sales Deck"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/neighbor-website.jpg" title="Responsive Web Site • The responsive marketing site I designed and implemented for Neighbor Billing.">
+        <img src="/images/shots/neighbor-website.jpg" title="Responsive Web Site"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/neighbor-website-careers.jpg" title="Responsive Careers Page • The responsive careers page I designed and implemented for Neighbor Billing.">
+        <img src="/images/shots/neighbor-website-careers.jpg" title="Responsive Careers Page"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+        </div>
+      </div>
+    </section>
+    <section class="pb-3 pt-md-5 pt-3" style="background-color: rgb(245 245 245 / 90%)">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-12 mx-auto pb-5">     
+            <span class="h1-xl text-gradient text-center">Concepts</span>
+          </div>
+        </div>
+      </div>
+      <div class="shots container">
+        <div class="row popup-gallery">
+          
+          
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/fuzzies-feed-evolution.jpg" title="Gratitude Journal Activity Feed Evolution • Fuzzies: A Gratitude Journal Concept - Evolution of the main feed, from wireframe to final.">
+        <img src="/images/shots/fuzzies-feed-evolution.jpg" title="Gratitude Journal Activity Feed Evolution"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/fuzzies-icon-variations.jpg" title="Gratitude Journal App Icon Variations • Fuzzies: A Gratitude Journal Concept - Variations of the app icon for Fuzzies, as well as the final design.">
+        <img src="/images/shots/fuzzies-icon-variations.jpg" title="Gratitude Journal App Icon Variations"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/guesty-brand.jpg" title="Guest Book App Branding • Brand for a guest book app.">
+        <img src="/images/shots/guesty-brand.jpg" title="Guest Book App Branding"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/guesty-flow.jpg" title="Guest Book App Screen Flow • Flow between each of the screens, showing the Vounteer user experience.">
+        <img src="/images/shots/guesty-flow.jpg" title="Guest Book App Screen Flow"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/guesty-guest-list.jpg" title="Guest Book App Guest List Screen • The Guesty guest list, showing all invitees to the party, with ability to filter on those who have signed.">
+        <img src="/images/shots/guesty-guest-list.jpg" title="Guest Book App Guest List Screen"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/guesty-message-details-share.jpg" title="Guest Book App Message Details and Share Screens • Message details that are added after the guest video or photo is taken, and ability to share the app with other guests or volunteers.">
+        <img src="/images/shots/guesty-message-details-share.jpg" title="Guest Book App Message Details and Share Screens"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/resinate-brand.jpg" title="Resinate Cannabis Brand • Brand I created for Resinate, a line of cannabis products.">
+        <img src="/images/shots/resinate-brand.jpg" title="Resinate Cannabis Brand"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/resinate-deck-portfolio.jpg" title="Investor Pitch Deck • Branded investor pitch deck for Resinate Cannabis.">
+        <img src="/images/shots/resinate-deck-portfolio.jpg" title="Investor Pitch Deck"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/resinate-packaging.jpg" title="Cannabis Packaging Concept • Product packaging concept for Resinate Cannabis.">
+        <img src="/images/shots/resinate-packaging.jpg" title="Cannabis Packaging Concept"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/dailyui-001.jpg" title="Sign Up Form • This shot would be the first screen for creating a new account. I personally like how AirBnB separates their signup flow into multiple steps, similar to how TypeForm collects information. Part of Daily UI: A 100 day project to improve my design skills.">
+        <img src="/images/shots/dailyui-001.jpg" title="Sign Up Form"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/layer2.jpg" title="Brand and Style Guide • Layer2: Brand and style guide for a fictional urban outdoor wear company.">
+        <img src="/images/shots/layer2.jpg" title="Brand and Style Guide"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+            
+<div class="col-lg-3 col-sm-6 col-12 mb-5">
+  <div class="shot h-100">
+    <div class="shot-img">
+      <a href="/images/shots/switch-connect.jpg" title="Social App Newsfeed and Settings • Nintendo Switch Connect: A conceptual social app for fans of the Nintendo Switch™. Credits: All Nintendo images and characters copyright Nintendo.">
+        <img src="/images/shots/switch-connect.jpg" title="Social App Newsfeed and Settings"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+          
+        </div>
+      </div>
+    </section>
+  </div>
+
+  
+  
+<section class="py-0">
+    
+        <div class="banner-image banner-fixed text-center d-flex" style="background: linear-gradient(to right, rgba(254, 155, 39, 0.9), rgba(237, 99, 0, 0.9)); min-height: 4px; box-shadow: 0 -10px 10px -5px rgba(0,0,0,0.5);">  
+            &nbsp;
+        </div>
+    
+</section>
+
 
   <section class="index pb-0 pt-md-5 pt-3 mt-5">
     <a name="writing"></a>    

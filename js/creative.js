@@ -160,4 +160,35 @@
     }
   });
 
+  // View toggle (list/grid)
+  (function() {
+    var toggle = document.getElementById('toggle');
+    var slider = document.getElementById('slider');
+    if (!toggle || !slider) return;
+
+    function updateSlider() {
+      var active = toggle.querySelector('.toggle-btn.active');
+      slider.style.width = active.offsetWidth + 'px';
+      slider.style.transform = 'translateX(' + (active.offsetLeft - 3) + 'px)';
+      slider.style.visibility = 'visible';
+    }
+
+    toggle.addEventListener('click', function(e) {
+      var btn = e.target.closest('.toggle-btn');
+      if (!btn || btn.classList.contains('active')) return;
+      $(btn).tooltip('hide');
+      toggle.querySelectorAll('.toggle-btn').forEach(function(b) {
+        b.classList.toggle('active', b === btn);
+      });
+      updateSlider();
+      var sectionOff = document.getElementById(btn.dataset.off);
+      if (sectionOff) sectionOff.style.display = 'none';
+      var sectionOn = document.getElementById(btn.dataset.on);
+      if (sectionOn) sectionOn.style.display = 'block';
+    });
+
+    requestAnimationFrame(function() { requestAnimationFrame(updateSlider); });
+    $('#toggle .toggle-btn').tooltip({ placement: 'bottom' });
+  })();
+
 })(jQuery); // End of use strict
