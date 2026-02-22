@@ -470,20 +470,9 @@ header.masthead h1 {
 	header.masthead {
 		/* background-attachment: fixed; */
 		min-height: 100vh;
-		position: relative;
 	}
 	header.masthead h1 {
 		font-size: 3rem;
-	}
-	header.masthead::after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 100px;
-		background: linear-gradient(to bottom, transparent, #fbfbf9);
-		pointer-events: none;
 	}
 }
 
@@ -502,6 +491,23 @@ header.masthead h1 {
 		line-height: 3rem;		
 	}
 }
+
+@media (min-width: 769px) {
+	header.masthead {
+		position: relative;
+	}
+	header.masthead::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100px;
+		background: linear-gradient(to bottom, transparent, #fbfbf9);
+		pointer-events: none;
+	}
+}
+
 @media (max-width: 768px) {
 	header.masthead {
 		background-image: url("../images/about/header-mobile.jpg");
@@ -708,6 +714,17 @@ div.banner-image {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;  
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100px;
+		background: linear-gradient(to bottom, transparent, #000);
+		pointer-events: none;
+	}
 }
 
 @media (min-width: 768px) {
