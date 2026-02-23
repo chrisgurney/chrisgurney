@@ -454,8 +454,6 @@ header.portfolio {
 }
 
 header.masthead {
-	/* padding-top: 10rem;
-	padding-bottom: calc(10rem - 56px); */
 	background-image: url("../images/about/header.jpg");
 	background-position: left top;
 	-webkit-background-size: cover;
@@ -792,9 +790,7 @@ div.banner-image {
 	text-align: center;
 	opacity: 0;
 	color: #fff;
-	background: linear-gradient(
-			rgba(254, 155, 39, 0.95),
-			rgba(237, 99, 0, 0.95));
+	background: var(--gradient-primary);
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	transition: all 0.2s;
@@ -1110,11 +1106,10 @@ blockquote {
 }
 
 .text-gradient {
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #FF8800), color-stop(1, #e05d00));
-  background-image: gradient(linear, left top, right top, color-stop(0, #FF8800), color-stop(1, #e05d00));
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+	background: var(--gradient-primary);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
 }
 
 .index blockquote > ul {
