@@ -6,8 +6,8 @@ html {
 
 body {
 	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-	--portfolio-border-radius: 0.5em;
-	--shot-border-radius: 1rem;
+	--border-radius-1: 0.5rem;
+	--border-radius-2: 1rem;
 	--box-shadow-1: 1px 1px 1px 0 rgba(0, 0, 0, 0.18);
 	--box-shadow-2: 2px 2px 2px 0 rgba(0, 0, 0, 0.15);
 	--box-shadow-3: 4px 4px 3px 0 rgba(0, 0, 0, 0.12), 8px 8px 8px 0 rgba(0, 0, 0, 0.1);
@@ -454,7 +454,7 @@ header.portfolio {
 	header.portfolio {
 		background-attachment: fixed;
 		padding-top: 0rem;	
-		height: 100vh;
+		height: 85vh;
 		min-height: 650px;
 		padding-bottom: 0;
 	}
@@ -478,7 +478,7 @@ header.masthead h1 {
 @media (min-width: 992px) {
 	header.masthead {
 		/* background-attachment: fixed; */
-		min-height: 100vh;
+		min-height: 85vh;
 	}
 	header.masthead h1 {
 		font-size: 3rem;
@@ -770,7 +770,7 @@ div.banner-image {
 
 .portfolio-box-container {
 	padding: 1em;
-	border-radius: var(--portfolio-border-radius);
+	border-radius: var(--border-radius-2);
 }
 
 .portfolio-box {
@@ -778,17 +778,17 @@ div.banner-image {
 	display: block;
 	max-width: 650px;
 	margin: 0 auto;
-	border-radius: var(--portfolio-border-radius);
+	border-radius: var(--border-radius-2);
 	box-shadow: var(--box-shadow-2);
 }
 
 .portfolio-box-bg {
-	border-radius: var(--portfolio-border-radius);
+	border-radius: var(--border-radius-2);
 }
 
 .portfolio-box-hover .portfolio-box-caption,
 .portfolio-box .portfolio-box-caption {
-	border-radius: var(--portfolio-border-radius);
+	border-radius: var(--border-radius-2);
 	position: absolute;
 	bottom: 0;
 	display: block;
@@ -835,7 +835,7 @@ div.banner-image {
 }
 
 .portfolio-box-hover .img-fluid {
-	border-radius: var(--portfolio-border-radius);
+	border-radius: var(--border-radius-2);
 }
 
 .portfolio-box:focus {
@@ -848,7 +848,7 @@ div.banner-image {
 }
 
 a.portfolio-box img.img-fluid {
-	border-radius: var(--portfolio-border-radius);
+	border-radius: var(--border-radius-2);
 }
 
 @media (min-width: 768px) {
@@ -1005,13 +1005,13 @@ blockquote {
 .article-post .popup-gallery.thumbs a {
 	border-bottom: none;
 	display: table-cell;
-	border-radius: var(--portfolio-border-radius);
+	border-radius: var(--border-radius-2);
 	box-shadow: var(--box-shadow-2);
 }
 
 .article-post .popup-gallery.thumbs a:hover {
 	color: #fff;
-	border-radius: 11px;
+	border-radius: var(--border-radius-2);
 	transition: .2s;	
 	transform: var(--transform-out);
 	box-shadow: var(--box-shadow-3);
@@ -1019,7 +1019,7 @@ blockquote {
 
 .article-post .popup-gallery.thumbs img {
 	border: solid 2px var(--color-primary);
-	border-radius: 11px;
+	border-radius: var(--border-radius-2);
 	padding: 0em;
 	float: none;
 	margin: 0;
@@ -1033,7 +1033,7 @@ blockquote {
 
 .more-image img {
 	border: solid 2px var(--color-primary);
-	border-radius: 11px;
+	border-radius: var(--border-radius-2);
 	padding: 0em;
 	margin: 0;
 }
@@ -1186,7 +1186,7 @@ blockquote {
 	box-shadow: var(--box-shadow-1);
 	border: 0;
 	font-size: 0.9rem; 	
-	border-radius: var(--shot-border-radius);
+	border-radius: var(--border-radius-1);
 }
 
 @media (min-width:1200px) {
@@ -1201,7 +1201,7 @@ blockquote {
 	&:hover {
 		transition: .2s;	
 		transform: var(--transform-out);
-		border-radius: var(--shot-border-radius);
+		border-radius: var(--border-radius-1);
 		box-shadow: var(--box-shadow-3);
 		& .shot-img {
 			/* box-shadow: none; */
@@ -1211,12 +1211,12 @@ blockquote {
 
 .shot-img img {
 	width: 100%;
-	border-radius: var(--shot-border-radius);
+	border-radius: var(--border-radius-1);
 }
 
 .card h6 {
 	margin-top: 1rem;
-	margin-bottom: var(--portfolio-border-radius);	
+	margin-bottom: var(--border-radius-2);
 }
 
 .shot-body p, .shot-body a,
@@ -1226,14 +1226,14 @@ blockquote {
 }
 
 .card-img-top {
-	border-top-left-radius: calc(1rem - 1px);
-	border-top-right-radius: calc(1rem - 1px);
+	border-top-left-radius: var(--border-radius-1);
+	border-top-right-radius: var(--border-radius-1);
 }
 
 .card-img-bottom {
 	box-shadow: 0 -4px 24px 0 rgba(0, 0, 0, 0.1);	
-	border-bottom-left-radius: calc(1rem - 1px);
-	border-bottom-right-radius: calc(1rem - 1px);
+	border-bottom-left-radius: var(--border-radius-1);
+	border-bottom-right-radius: var(--border-radius-1);
 }
 
 .card .text-muted, .shot {
