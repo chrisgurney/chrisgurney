@@ -7,6 +7,7 @@ html {
 body {
 	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 	--portfolio-border-radius: 0.5em;
+	--shot-border-radius: 1rem;
 	--box-shadow-1: 1px 1px 1px 0 rgba(0, 0, 0, 0.18);
 	--box-shadow-2: 2px 2px 2px 0 rgba(0, 0, 0, 0.15);
 	--box-shadow-3: 4px 4px 3px 0 rgba(0, 0, 0, 0.12), 8px 8px 8px 0 rgba(0, 0, 0, 0.1);
@@ -1185,7 +1186,7 @@ blockquote {
 	box-shadow: var(--box-shadow-1);
 	border: 0;
 	font-size: 0.9rem; 	
-	border-radius: 1rem;
+	border-radius: var(--shot-border-radius);
 }
 
 @media (min-width:1200px) {
@@ -1200,7 +1201,7 @@ blockquote {
 	&:hover {
 		transition: .2s;	
 		transform: var(--transform-out);
-		border-radius: 1rem;
+		border-radius: var(--shot-border-radius);
 		box-shadow: var(--box-shadow-3);
 		& .shot-img {
 			/* box-shadow: none; */
@@ -1210,7 +1211,7 @@ blockquote {
 
 .shot-img img {
 	width: 100%;
-	border-radius: var(--portfolio-border-radius);
+	border-radius: var(--shot-border-radius);
 }
 
 .card h6 {
