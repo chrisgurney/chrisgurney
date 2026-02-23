@@ -150,14 +150,15 @@
 
   //var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-  $('.video').parent().click(function () {
-    if($(this).children(".video").get(0).paused){
-        $(this).children(".video").get(0).play();
-        $(this).children(".playpause").fadeOut();
-    }else{
-      $(this).children(".video").get(0).pause();
-      $(this).children(".playpause").fadeIn();
-    }
+  $('.video-wrapper i').click(function () {
+    const video = $(this).closest('.video-wrapper').find('video').get(0);
+    video.play();
+  });
+
+  $('.video').on('play', function () {
+    $(this).closest('.video-wrapper').find("i").fadeOut();
+  }).on('pause', function () {
+    $(this).closest('.video-wrapper').find("i").fadeIn();
   });
 
 // View toggle

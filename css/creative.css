@@ -1372,14 +1372,27 @@ img.mfp-img {
  */
 
 video {
-	display: block;
-	vertical-align: middle; 
 	border-radius: 0.625rem; 
 }
 
 .video-wrapper {
+	box-shadow: var(--box-shadow-1);
+	border-radius: var(--border-radius-1);
+	cursor: pointer;
+	line-height: 0;
 	position: relative;
+	display: block;
 	width: 100%;
+	& i {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 4rem;
+		color: var(--color-primary);
+		opacity: 0.8;
+		text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+	}
 }
 
 .playpause {
