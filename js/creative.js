@@ -156,9 +156,9 @@
   });
 
   $('.video').on('play', function () {
-    $(this).closest('.video-wrapper').find("i").fadeOut();
+    $(this).closest('.video-wrapper').find("i").fadeTo(300, 0);
   }).on('pause', function () {
-    $(this).closest('.video-wrapper').find("i").fadeIn();
+    $(this).closest('.video-wrapper').find("i").fadeTo(300, 1);
   });
 
 // View toggle
