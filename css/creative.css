@@ -1190,6 +1190,7 @@ blockquote {
 
 @media (max-width: 992px) {
 	.index img {
+		border-radius: var(--border-radius-2);
 		display: block;
 		max-width: 100%;
 		margin-bottom: 1em;
